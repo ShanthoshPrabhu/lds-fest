@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Homepage from "./Pages/Homepage";
 import Events from "./Pages/Events";
-import Cardquiz from "./Components/CardQuiz";
+import Cards from "./Components/Cards";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" exact element={<Homepage />} />
-          <Route path="/cards" exact element={<Cardquiz />} />
+          <Route path="/cards" exact element={<Cards />} />
           <Route path="/events" exact element={<Events />} />
         </Routes>
       </BrowserRouter>
