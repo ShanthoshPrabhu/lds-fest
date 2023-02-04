@@ -6,7 +6,7 @@ import Cards from "./Components/Cards";
 
 const App = () => {
   return (
-    <>
+    <div className="bg-red-600">
       {/* <div className="bg-slate-600 w-full h-screen"></div> */}
       <BrowserRouter>
         <Navbar />
@@ -16,7 +16,7 @@ const App = () => {
           <Route path="/events" exact element={<Events />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 };
 
